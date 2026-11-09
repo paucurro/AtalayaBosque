@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="268ef888-2797-4147-8b4c-f45d6cfac61a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="1ObcdAgWSjYAFZnNr7aoQfsuS9O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Atalaya_Bonaire/AtalayaBosque&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web.server&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Atalaya_Bonaire\AtalayaBosque\pictures\logo" />
+      <recent name="D:\Atalaya_Bonaire\AtalayaBosque" />
+      <recent name="D:\Atalaya_Bonaire\AtalayaBosque\lang" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="268ef888-2797-4147-8b4c-f45d6cfac61a" name="Default Changelist" comment="" />
+      <created>1563262001986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563262001986</updated>
+      <workItem from="1563262003290" duration="86000" />
+      <workItem from="1563263025103" duration="4856000" />
+      <workItem from="1563298444861" duration="6001000" />
+      <workItem from="1563483673354" duration="40000" />
+      <workItem from="1563863503280" duration="34000" />
+      <workItem from="1563863819030" duration="3003000" />
+      <workItem from="1563913935880" duration="15000" />
+      <workItem from="1563950475378" duration="2992000" />
+      <workItem from="1563964304964" duration="18000" />
+      <workItem from="1564249823353" duration="111000" />
+      <workItem from="1564250952035" duration="45000" />
+      <workItem from="1570474823719" duration="3913000" />
+      <workItem from="1570564611130" duration="26000" />
+      <workItem from="1571852446552" duration="4597000" />
+      <workItem from="1571946861591" duration="697000" />
+      <workItem from="1572980422852" duration="1430000" />
+      <workItem from="1576613063078" duration="1078000" />
+      <workItem from="1576614513400" duration="83000" />
+      <workItem from="1579244088032" duration="194000" />
+      <workItem from="1579271469396" duration="604000" />
+      <workItem from="1579275314607" duration="54000" />
+      <workItem from="1579552721990" duration="82000" />
+      <workItem from="1588188591446" duration="613000" />
+      <workItem from="1588191232580" duration="1918000" />
+      <workItem from="1588253365544" duration="12000" />
+      <workItem from="1589275886922" duration="749000" />
+      <workItem from="1598980918809" duration="664000" />
+      <workItem from="1599806349676" duration="914000" />
+      <workItem from="1599814836148" duration="625000" />
+      <workItem from="1599926960262" duration="351000" />
+      <workItem from="1619452221625" duration="629000" />
+      <workItem from="1652124830672" duration="1579000" />
+      <workItem from="1656269223208" duration="3397000" />
+      <workItem from="1656272880182" duration="2000" />
+      <workItem from="1658087595416" duration="10000" />
+      <workItem from="1747173235270" duration="261000" />
+      <workItem from="1747812173762" duration="581000" />
+      <workItem from="1747823310843" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

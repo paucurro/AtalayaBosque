@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="atalayabosque.com" id="a1206210-8c98-4f9e-b1a8-c8274570fcbc" port="22" customName="AtalayaBosque" nameFormat="CUSTOM" />
+    </configs>
+  </component>
+</project>
