@@ -24,7 +24,6 @@ if (!is_file($cache) || (time() - filemtime($cache)) > CACHE_SEGUNDOS) {
     curl_setopt_array($ch, [CURLOPT_RETURNTRANSFER => true, CURLOPT_FOLLOWLOCATION => true, CURLOPT_TIMEOUT => 15]);
     $datos = curl_exec($ch);
     $codigo = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
 
     if ($datos === false || $codigo != 200) {
         if (!is_file($cache)) {
