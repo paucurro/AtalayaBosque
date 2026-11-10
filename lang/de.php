@@ -119,6 +119,7 @@ return [
         '014' => 'Bus TIB Mallorca A11',
     ],
     'txt_blog' => [
+        '004' => 'Mehr laden',
         '001' => 'Unser Blog',
         '002' => 'Informationen, Angebote, News, Ankündigungen und mehr.<br><stark>Alles, was Sie für Ihren Besuch in unseren Wohnungen benötigen </stark>.',
         '003' => 'Zurück zum Blog',

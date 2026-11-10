@@ -100,6 +100,7 @@ return [
         '014' => 'Bus TIB Mallorca A11',
     ],
     'txt_blog' => [
+        '004' => 'Load more',
         '001' => 'Our Blog',
         '002' => 'Information, offers, news, announcements, and more.<br><strong>Everything you need</strong> for your visit to our apartments',
         '003' => 'Go back Blog',

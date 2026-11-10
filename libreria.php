@@ -8,11 +8,11 @@ class datos_usuario
 
 
 //inicio la sesión
-if (!isset($_SESSION)) {
+if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-if (!isset($_SESSION['datos_usuario'])) {
+if (!isset($_SESSION['datos_usuario']) || !($_SESSION['datos_usuario'] instanceof datos_usuario)) {
     $_SESSION['datos_usuario'] = new datos_usuario;
     $_SESSION['datos_usuario']->idioma = 'en';
 }
@@ -40,7 +40,7 @@ $arrLenguajesCortos = [
 function buscaKeyTrans($array, $partes, &$pos)
 {
     $resp = null;
-    if (array_key_exists($partes[$pos], $array)) {
+    if (is_array($array) && array_key_exists($partes[$pos], $array)) {
         $resp = $array[$partes[$pos]];
         if ((is_array($resp)) && ($pos < (count($partes) - 1))) {
             $pos++;
@@ -64,10 +64,10 @@ function trans($key)
             $pos = 0;
             $resp = buscaKeyTrans($array, $partes, $pos);
         } else {
-            $resp = $array[$key];
+            $resp = $array[$key] ?? '';
         }
 
-        if ($resp == '') {
+        if ($resp === null || $resp === '' || is_array($resp)) {
             $resp = $key;
         }
     }
@@ -78,7 +78,7 @@ function trans($key)
 
 function addTranslationsToArray($idioma)
 {
-    return require_once('lang/' . $_SESSION['datos_usuario']->idioma . '.php');
+    return require('lang/' . $_SESSION['datos_usuario']->idioma . '.php');
 }
 
 /**
@@ -222,3 +222,13 @@ function pon_seleccionado($opcion, $texto, $comando = 'active')
     return $resultado;
 }
 
+function pon_campo_idioma ($array, $campo) {
+    $lang = $_SESSION['datos_usuario']->idioma;
+    $field = $campo;
+    if ($lang == 'es') {
+        $campo .= '_es';
+    } elseif ($lang == 'de') {
+        $campo .= '_de';
+    }
+    return $array[$campo] ?? $array[$field] ?? '';
+}

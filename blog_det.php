@@ -14,17 +14,18 @@ carga_idiomas($_SESSION['datos_usuario']->idioma);
 $salir = true;
 if (isset($_REQUEST['id'])) {
 
-    $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS);
+    $id = (int)($_GET["id"] ?? 0);
 
     mysqli_select_db($bonaire_atalaya_db, $database_bonaire_atalaya_db);
     $query_tabla = "SELECT *, DATE_FORMAT(created_at, '%d/%m/%Y') AS fecha, category.name AS category FROM post " .
-        "LEFT JOIN category ON post.category_id = category.id WHERE post.id = " . $id . " LIMIT 1;";
+        "LEFT JOIN category ON post.category_id = category.id WHERE post.id = " . $id . " AND post.status = 1 " .
+        "AND (post.publish_at IS NULL OR post.publish_at <= NOW()) AND (post.expires_at IS NULL OR post.expires_at > NOW()) LIMIT 1;";
     $tabla = mysqli_query($bonaire_atalaya_db, $query_tabla);
 
     if ($tabla != false) {
         $row_blog = mysqli_fetch_array($tabla, MYSQLI_ASSOC);
         mysqli_free_result($tabla);
-        $salir = false;
+        $salir = ($row_blog === null);
     }
 }
 
@@ -50,18 +51,18 @@ if ($salir == true) {
     <div class="container">
         <div class="row" id="">
             <div class="col-md-12">
-                <h3><?php echo $row_blog['title']; ?></h3>
+                <h3><?php echo pon_campo_idioma($row_blog, 'title'); ?></h3>
                 <?php
-                $image = "https://bonairepaguera.com/uploads/". $row_blog['image'] ."";
-                if (($row_blog['image'] != "")) : ?>
+                $image = "blog_img.php?f=". urlencode($row_blog['image']);
+                if ($row_blog['image'] != "") : ?>
                     <img src="<?php echo $image; ?>" class="img-responsive">
                 <?php endif; ?>
                 <br>
                 <div class="">
                     <div class="panel-body">
-                        <h4><?php echo $row_blog['brief']; ?></h4>
+                        <h4><?php echo pon_campo_idioma($row_blog, 'brief'); ?></h4>
                         <p class="text-center"><img src="img/curve.svg" class="seperator probootstrap-animate" alt=""></p>
-                        <p><?php echo $row_blog['content']; ?></p>
+                        <div class="blog-content"><?php echo pon_campo_idioma($row_blog, 'content'); ?></div>
                         <p class="text-center"><img src="img/curve.svg" class="seperator probootstrap-animate" alt=""></p>
                         <small><?php echo $row_blog['fecha']; ?></small>
                         <small><?php echo $row_blog['category']; ?></small>
